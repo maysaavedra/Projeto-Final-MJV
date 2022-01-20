@@ -1,0 +1,11 @@
+package com.mjv.projetofinal.model;
+
+public class Address {
+	
+	private String street;
+	private String number;
+	private String district;
+	private String zipCode;
+	
+	
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="p1Style_cadastro.css">
+  <link rel="stylesheet" href="p1Style_home.css">
+  
+</head>
+<header>
+  <a class="header_logo" href="p1_home.html"><img src="images/logo_plopsy-removebg-preview.png" alt="logo" width=140 height=100></a>
+  <h1>PLOPSY</h1>
+ </header>
+
+<body>
+         
+    <div class="content">  
+    <div id="cadastro">
+        <form method="post" action=""> 
+          <h2>Informe seu e-mail</h2> 
+           
+          
+          <div class="input-group mb-3">
+            <input id="email_card" name="email_card" type="email" required="required" 
+            class="form-control" placeholder="nome@gmail.com">
+            <div class="input-group-append">
+              <button class="btn btn-info" type="submit">Ok</button>  
+             </div>
+          </div>
+           
+        </form>
+      </div>
+      
+      </div>
+      <footer class="page-footer">
+        <div class="row">
+          <div class="col">
+            <h5>PLOPSY</h5>
+            <p>Esse é um projeto desenvolvido para a disciplina de Programação WEB da Fatec/Ipiranga</p>
+          </div>
+        </div>   
+        <div class="footer">     
+            © 2021   
+        </div>
+      </footer>
+    
+</body>
+
+
+
+</html>
