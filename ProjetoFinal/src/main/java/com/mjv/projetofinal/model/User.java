@@ -1,5 +1,7 @@
 package com.mjv.projetofinal.model;
 
+
+
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -30,6 +32,7 @@ public class User {
 	@Column( nullable = false, length = 20 )
 	private String phone;
 	
+		
 	@Embedded
 	private Address address;
 	
@@ -74,13 +77,25 @@ public class User {
 		return address;
 	}
 	public void setAddress(Address address) {
+		this.address = address;	}
+	
+	
+	public User(Integer id, String name, String email, String password, String cpf, String phone, 
+			Address address) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.cpf = cpf;
+		this.phone = phone;		
 		this.address = address;
 	}
 	
 	
-	
-	
-	
+	public User() {
+		
+	}
 	
 	
 
