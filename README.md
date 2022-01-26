@@ -8,13 +8,12 @@ Todo o conteúdo desenvolvido durante a school pode ser encontrado [aqui](https:
 
 ## Tecnologias usadas
 
-- Java
-- Eclipse
-- Spring web mvc
-- Tymeleaf
-- JPA
-- Postgres
-- Dbeaver (genrenciamento do banco de dados)
+ <img  align="center" alt="html5" src="https://img.shields.io/badge/Thymeleaf-%23005C0F.svg?style=for-the-badge&logo=Thymeleaf&logoColor=white"/>  
+  <img  align="center" alt="html5" src="https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white"/>  
+  <img  align="center" alt="html5" src="https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot"/>
+  <img  align="center" alt="html5" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img  align="center" alt="html5" src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white"/>  
+ <img  align="center" alt="html5" src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"/>
 
 ## Imagens da aplicação
 
