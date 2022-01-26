@@ -6,7 +6,7 @@ Todo o conteúdo desenvolvido durante a school pode ser encontrado [aqui](https:
 
 
 
-##Tecnologias usadas
+## Tecnologias usadas
 
 - Java
 - Eclipse
@@ -16,7 +16,7 @@ Todo o conteúdo desenvolvido durante a school pode ser encontrado [aqui](https:
 - Postgres
 - Dbeaver (genrenciamento do banco de dados)
 
-##Imagens da aplicação
+## Imagens da aplicação
 
 Tabela inicial do usuário
 
