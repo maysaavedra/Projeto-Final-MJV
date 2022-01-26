@@ -9,13 +9,13 @@ public class Address {
 	@Column(length = 50)
 	private String street;
 	
-	@Column(length = 5)
+	@Column(length = 10)
 	private String number;
 	
 	@Column(length = 50)
 	private String district;
 	
-	@Column(length = 8)
+	@Column(length = 10)
 	private String zipCode;
 	
 	public String getStreet() {

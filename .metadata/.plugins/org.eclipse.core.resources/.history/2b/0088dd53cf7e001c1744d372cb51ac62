@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href= "../static/html/css/p1Style_home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>   
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+
+<head>
+<title>Plopsy | HOME</title>
+</head>
+
+<header>
+    <a class="header_logo" href="../static/index.html"><img src="../static/html/images/logo_plopsy-removebg-preview.png" alt="logo" width=140 height=100></a>
+    <h1>PLOPSY</h1>
+ </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+
+<h1>Usuários Cadastrados</h1>
+
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>cpf</th>
+			<th>Telefone</th>
+			<th>Rua</th>
+			<th>nº</th>
+			<th>Bairro</th>
+			<th>cep</th>
+			<th>email</th>
+			<th>senha</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr th:if="${users.empty}">
+			<td colspan="2">No Users Available</td>
+		</tr>
+		<tr th:each="user : ${users}">
+			<td><span th:text="${user.name}"> Nome </span></td>
+			<td><span th:text="${user.cpf}"> Cpf </span></td>
+			<td><span th:text="${user.phone}"> Telefone </span></td>
+			<td><span th:text="${user.address.street}"> Rua </span></td>
+			<td><span th:text="${user.address.number}"> nº </span></td>
+			<td><span th:text="${user.address.district}"> Bairro </span></td>
+			<td><span th:text="${user.address.zipCode}"> CEP </span></td>
+			<td><span th:text="${user.email}"> Email </span></td>
+			<td><span th:text="${user.password}"> Senha </span></td>
+			<td><a th:href="${'/users/edit/' + user.id}" class="btn btn-default">Editar</a></td>
+			<td><a th:href="${'/users/delete/' + user.id}" class="btn btn-danger">Deletar</a></td>
+
+
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+</html>
+
+
+
+

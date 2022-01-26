@@ -1,0 +1,30 @@
+<html>
+
+<h1>Usuários Cadastrados</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th> Telefone </th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr th:if="${cadastros.empty}">
+            <td colspan="2"> No Users Available </td>
+        </tr>
+        <tr th:each="user : ${cadastros}">
+            <td><span th:text="${user.name}"> Nome </span></td>
+            <td><span th:text="${user.phone}"> Telefone </span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+</html>
+
+
+
+

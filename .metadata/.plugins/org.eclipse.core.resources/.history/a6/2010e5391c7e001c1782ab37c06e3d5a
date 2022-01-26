@@ -1,0 +1,44 @@
+<html>
+
+<h1>Usuários Cadastrados</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th> Nome </th>
+            <th> cpf </th>
+            <th> Telefone </th>
+           <th> Rua </th>
+            <th> nº </th>
+            <th> Bairro </th>
+            <th> cep </th>        
+            <th> email </th>
+            <th> senha </th>
+        </tr>
+    </thead>
+    <tbody>
+	<tr th:if="${cadastros.empty}">
+            <td colspan="2"> No Users Available </td>
+        </tr>
+        <tr th:each="user : ${cadastros}">
+            <td><span th:text="${user.name}"> Nome </span></td>
+            <td><span th:text="${user.cpf}"> Cpf </span></td>
+            <td><span th:text="${user.phone}"> Telefone </span></td>
+            <td><span th:text="${user.address.street}"> Rua </span></td>
+            <td><span th:text="${user.address.number}"> nº </span></td>            
+        	<td><span th:text="${user.address.district}"> Bairro </span></td>
+        	<td><span th:text="${user.address.zipCode}"> CEP </span></td>
+            <td><span th:text="${user.email}"> Email </span></td>
+            <td><span th:text="${user.password}"> Senha </span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+</html>
+
+
+
+

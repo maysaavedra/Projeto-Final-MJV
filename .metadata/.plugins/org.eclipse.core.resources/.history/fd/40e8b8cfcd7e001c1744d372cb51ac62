@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+	<link rel="stylesheet" href= "../static/html/css/p1Style_home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>   
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+<title>PLOPSY | Editar</title>
+</head>
+<header>
+    <a class="header_logo" href="../static/index.html"><img src="../static/html/images/logo_plopsy-removebg-preview.png" alt="logo" width=140 height=100></a>
+    <h1>PLOPSY</h1>
+ </header>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+<body>
+	<div class="container">
+		<h2>Editar Usuário</h2>
+		<div>
+			<form class="form-horizontal" th:object="${user}"
+				th:action="@{/users}" method="post">
+				<p>
+					<label for="nome_cad">Nome:</label> <input id="nome_cad"
+						name="name" type="text" placeholder="nome" />
+				</p>
+				<p>
+					<label for="cpf_cad">CPF:</label> <input id="cpf_cad"
+						name="cpf" type="text" placeholder="" />
+				</p>
+
+				<p>
+					<label for="email_cad">E-mail:</label> <input id="email_cad"
+						name="email" type="email" placeholder="ex. seunome@gmail.com" />
+				</p>
+				<h4>Endereço</h4>
+				<p>
+					<label for="nome_rua">Rua:</label> <input id="nome_rua"
+						name="address.street" type="text" placeholder="Rua Ipiranga" />
+				</p>
+				<p>
+					<label for="numero_casa">Nº:</label> <input id="numero_casa"
+						name="address.number" type="text" placeholder="1234" />
+				</p>
+				<p>
+					<label for="bairro">Bairro:</label> <input id="bairro"
+						name="address.district" type="text" placeholder="Centro" />
+				</p>
+				<p>
+					<label for="cep">CEP:</label> <input id="cep"
+						name="address.zipCode" type="text" placeholder="00000-000" />
+				</p>
+				<p>
+					<label for="senha_cad">Senha:</label> <input id="senha_cad"
+						name="password" type="password" placeholder="ex. 1234" />
+				</p>		
+
+				<p>
+					<label for="telefone_cad">Telefone:</label> <input
+						id="telefone_cad" name="phone" type="text"
+						placeholder="ex. (xx) xxxxx-xxxx" />
+				</p>
+
+				<p>
+					<button type="submit" class="btn btn-primary">Salvar</button>
+
+				</p>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
