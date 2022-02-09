@@ -1,8 +1,0 @@
-
-
-<h1>Imagem cadastrada</h1>
-
-<p th:text="${user.name"></p>
-
-
-<img th:src="/@{${user.photosImagePath}}" />
